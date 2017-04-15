@@ -1,4 +1,4 @@
-# propel-helper
+# Propel Helper
 This repository works as a small helper to initialize propel for your project. It includes the following:
 
 * Setup scripts for windows and mac/linux
