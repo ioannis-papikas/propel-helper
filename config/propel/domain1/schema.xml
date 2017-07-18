@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database name="domain1" defaultIdMethod="native" defaultPhpNamingMethod="underscore" namespace="App\Propel\Domain1">
+</database>

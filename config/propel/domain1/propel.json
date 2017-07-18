@@ -1,28 +1,23 @@
 {
     "propel": {
+        "general": {
+            "project": "Propel Helper",
+            "version": "v2.0"
+        },
         "database": {
             "connections": {
                 "default": {
                     "adapter": "mysql",
-                    "dsn": "mysql:host=localhost;port=3306;dbname=your_db_name",
+                    "dsn": "mysql:host=localhost;port=3306;dbname=domain1",
                     "user": "your_db_username",
                     "password": "your_db_password",
                     "settings": {
                         "charset": "utf8"
                     }
                 },
-                "development": {
+                "domain1": {
                     "adapter": "mysql",
-                    "dsn": "mysql:host=localhost;port=3306;dbname=your_db_name",
-                    "user": "your_db_username",
-                    "password": "your_db_password",
-                    "settings": {
-                        "charset": "utf8"
-                    }
-                },
-                "production": {
-                    "adapter": "mysql",
-                    "dsn": "mysql:host=localhost;port=3306;dbname=your_db_name",
+                    "dsn": "mysql:host=localhost;port=3306;dbname=domain1",
                     "user": "your_db_username",
                     "password": "your_db_password",
                     "settings": {
@@ -31,16 +26,11 @@
                 }
             }
         },
-        "runtime": {
-            "defaultConnection": "production",
-            "connections": [
-                "production"
-            ]
-        },
         "generator": {
             "defaultConnection": "default",
             "connections": [
-                "default"
+                "default",
+                "domain1"
             ]
         }
     }
